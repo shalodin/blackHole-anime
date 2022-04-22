@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel rotation</title>
+
+    <style>
+        .wheel {
+            border:1px solid red;
+            height: 80px;
+            width: 80px;
+            border-radius: 45%;
+            animation: rotatewheel linear .6s infinite;
+            background: black;
+            box-shadow: 0px 0px 20px 30px orange, 0px 0px 20px 60px white;
+
+        }
+        #container {
+
+            position:relative;
+
+            top: 180px;
+        }
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:black;
+        }
+
+
+        @keyframes rotatewheel {
+            100% {
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="wheel">
+
+        </div>
+    </div>
+    
+</body>
+</html>
